@@ -10,8 +10,14 @@ The script installs [dify-voicevox-tts](https://github.com/uezo/dify-voicevox-tt
 
 ## Automatic setup (Recommended)
 ```sh
+# Add executable permission
 chmod +x install_voicevox_to_dify.sh
+
+# Run the install script
 ./install_voicevox_to_dify.sh
+
+# Run the install script with API endpoint
+./install_voicevox_to_dify.sh http://localhost:50021/speakers
 ```
 
 The script automatically performs the following steps:

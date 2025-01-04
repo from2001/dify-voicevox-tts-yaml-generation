@@ -11,8 +11,15 @@ else
     exit 1
 fi
 
-# Prompt the user to enter the URL of the Voicevox Speaker API endpoint
-read -p "Please enter the URL of the Voicevox Speaker API endpoint (e.g., http://localhost:50021/speakers). If you want to skip, just press Enter: " SPEAKER_API_ENDPOINT
+# If the first argument is specified, assign it to SPEAKER_API_ENDPOINT
+if [ -n "$1" ]; then
+    SPEAKER_API_ENDPOINT=$1
+fi
+
+# Prompt the user to enter the URL of the Voicevox Speaker API endpoint if not already set
+if [ -z "$SPEAKER_API_ENDPOINT" ]; then
+    read -p "Please enter the URL of the Voicevox Speaker API endpoint (e.g., http://localhost:50021/speakers). If you want to skip, just press Enter: " SPEAKER_API_ENDPOINT
+fi
 
 # Clone dify-voicevox-tts
 rm -rf dify-voicevox-tts
@@ -52,7 +59,7 @@ docker commit $CONTAINER_NAME $CONTAINER_NAME
 
 # Print the installation completion message
 echo ""
-echo "Voicevox has been installed to DIFY successfully."
+echo "Voicevox has been installed to Dify successfully."
 
 # Restart the container
 echo ""
