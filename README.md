@@ -45,7 +45,7 @@ python generate_voicebox_yaml.py http://localhost:10101/speakers
 Replace the generated yaml with the [file](https://github.com/uezo/dify-voicevox-tts/blob/main/voicevox/tts/voicevox.yaml) in the dify-voicevox-tts directory.
 
 # Links
-[dify](https://github.com/langgenius/dify)
+[dify](https://github.com/langgenius/dify)  
 [dify-voicevox-tts](https://github.com/uezo/dify-voicevox-tts)  
 [VOICEVOX](https://voicevox.hiroshiba.jp/)  
 [AivisSpeech](https://aivis-project.com/)  
