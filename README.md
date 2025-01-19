@@ -1,3 +1,8 @@
+# Notice
+
+This is not working with Dify 1.0.x  
+I am developing Dify plugin version of the feature.  
+
 # What is this script?  
 
 The script installs [dify-voicevox-tts](https://github.com/uezo/dify-voicevox-tts) into Dify with the list of voice models supported by Voicevox or AivisSpeech API.
