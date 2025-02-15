@@ -1,7 +1,7 @@
 # Notice
 
 This is not working with Dify 1.0.x  
-I am developing Dify plugin version of the feature.  
+If youbuse Dify 1.0.x, use [Voicevox_Dify_Plugin](https://github.com/from2001/Voicevox_Dify_Plugin)
 
 # What is this script?  
 
